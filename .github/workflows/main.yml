@@ -30,7 +30,7 @@ jobs:
       - name: Publish image to Docker Hub
         run: docker push yash8519/spring-boot-example:latest
 
-  
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Pull image from Docker Hub
