@@ -30,9 +30,8 @@ jobs:
       - name: Publish image to Docker Hub
         run: docker push yash8519/spring-boot-example:latest
 
-  deploy:
-    needs: build
-    runs-on: [aws-ec2]
+  
+    runs-on: ubuntu-latest
     steps:
       - name: Pull image from Docker Hub
         run: docker pull yash8519/spring-boot-example:latest
