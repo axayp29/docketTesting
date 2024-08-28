@@ -12,7 +12,7 @@
 	<artifactId>TestingSpringProject</artifactId>
 	<version>0.0.1</version>
 	<name>TestingSpringProject</name>
-	<description>911 US Goverment Project a</description>
+	<description>911 US Goverment Project b</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
