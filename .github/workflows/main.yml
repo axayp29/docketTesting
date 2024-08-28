@@ -41,4 +41,4 @@ jobs:
         run: sudo docker rm -f springboot-example-container
       
       - name: Run Docker container
-        run: sudo docker run -p 9090:9090 yash8519/spring-boot-example
+        run: sudo docker run -d -p 9090:9090 yash8519/spring-boot-example
