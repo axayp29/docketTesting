@@ -55,7 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<filename>demo</filename>
+		<finalName>demo</finalName> 
 	</build>
 
 </project>
