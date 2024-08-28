@@ -55,6 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<filename>demo</filename>
 	</build>
 
 </project>
