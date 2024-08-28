@@ -25,20 +25,20 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Build Docker image
-        run: docker build -t demo/spring-boot-example .
+        run: docker build -t yash8519/spring-boot-example .
       
       - name: Publish image to Docker Hub
-        run: docker push demo/spring-boot-example:latest
+        run: docker push yash8519/spring-boot-example:latest
 
   deploy:
     needs: build
     runs-on: self-hosted
     steps:
       - name: Pull image from Docker Hub
-        run: docker pull demo/spring-boot-example:latest
+        run: docker pull yash8519/spring-boot-example:latest
       
       - name: Delete old container
         run: docker rm -f springboot-example-container
       
       - name: Run Docker container
-        run: docker run -d -p 9090:9090 --name springboot-example-container demo/spring-boot-example
+        run: docker run -d -p 9090:9090 --name springboot-example-container yash8519/spring-boot-example
