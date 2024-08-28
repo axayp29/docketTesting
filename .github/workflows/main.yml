@@ -31,6 +31,7 @@ jobs:
         run: docker push yash8519/spring-boot-example:latest
 
   deploy:
+    needs: build  # This ensures that deploy runs after build
     runs-on: ubuntu-latest
     steps:
       - name: Pull image from Docker Hub
