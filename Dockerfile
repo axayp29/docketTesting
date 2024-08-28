@@ -6,5 +6,5 @@ COPY target/demo.jar demo.jar
 
 EXPOSE 9090
 
-CMD ["java",-jar","demo.jar"]
+CMD ["java","-jar","demo.jar"]
 
